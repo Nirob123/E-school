@@ -1,0 +1,229 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+}
+
+.top-banner{
+  background-color: #F0FFF0;
+}
+
+
+
+/* Header nav start  */
+
+a.nav-link {
+    margin-right: 20px;
+    font-weight: 700;
+
+}
+
+a.navbar-brand img {
+    width: 194px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link:hover{
+    color: #ffffff;
+}
+
+nav.fill ul li a.nav-link {
+    transition: all .5s;
+}
+    
+nav.fill ul li a.nav-link:after {
+    text-align: left;
+    content: ' ';
+    margin: 0;
+    opacity: 0;
+}
+    
+nav.fill ul li a.nav-link:hover {
+    color: white;
+    z-index: 1;
+}
+    
+nav.fill ul li a.nav-link:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    opacity: 1;
+}
+    
+nav.fill ul li a.nav-link {
+      position: relative;
+}
+    
+nav.fill ul li a.nav-link:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: #21B573;
+      height: 1px;
+
+}
+
+/* End  */
+
+
+/* section Learn start  */
+
+section#learn-on{
+    margin-bottom: 100px;
+}
+
+
+.learn {
+    padding: 5% 2%;
+}
+
+.learn p {
+    margin-bottom: 30px;
+}
+.sign-in-btn{
+    font-weight: bold;
+    background-color: #21B573;
+    color: white;
+    border: 2px solid #21B573;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a.learn-btn {
+    font-weight: bold;
+    background-color: #21B573;
+    color: white;
+    border: 2px solid #21B573;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+/* End  */
+
+/* section Details start  */
+
+section#details{
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+}
+
+.card.text-center.details-hover {
+    border: none;
+    transition: .5s;
+}
+.card.text-center.details-hover:hover {
+    box-shadow: 10px 10px 30px gray;
+}
+
+/* End  */
+
+/* section Online courses start  */
+
+section#online{
+    margin-bottom: 100px;
+}
+
+.online-header{
+    margin-bottom: 50px;
+}
+
+.card.card-shadow {
+    box-shadow: 10px 10px 20px gray;
+    border-radius: 25px;
+    border: none;
+    padding: 5%;
+}
+
+.img-thumbnail{
+    border: none;
+}
+
+a.online-btn {
+    font-weight: bold;
+    background-color: #21B573;
+    color: white;
+    border: 2px solid #21B573;
+    padding: 15px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: 1s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a.online-btn:hover {
+    background-color: white;
+    color: #21B573;
+}
+
+
+/* End  */
+
+/* Testimonials start  */
+
+.testimonials-card {
+    box-shadow: 0px 5px 15px gray;
+    padding: 5%;
+}
+
+img.img-fluid.img {
+    width: 150px;
+    padding-top: 35px;
+}
+.card h5{font-weight: 700;}
+.card{
+    border:none;
+    border-radius: 10px;
+}
+.popular-subject h1{
+    text-align: center;
+}
+/* End  */
+
+/* Footer  */
+footer {
+    background-color: #282531;
+    padding: 5%;
+}
+footer ul li{
+    color: white;
+    list-style: none;
+    letter-spacing: 2px;
+}
+/* End  */
+
+/* Nav animation */
+
+@-webkit-keyframes fill {
+    0% {
+      width: 0%;
+      height: 1px;
+    }
+    50% {
+      width: 100%;
+      height: 1px;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+      background: #21B573;
+      border-radius: 10px;
+    }
+  }
